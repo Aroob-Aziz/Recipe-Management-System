@@ -1,0 +1,152 @@
+body {
+  background-image: url("bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: lightyellow;
+  color: black;
+}
+
+h1,
+h2 {
+  text-align: center;
+  color: black;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+}
+
+.add-recipe {
+  margin-bottom: 40px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.add-recipe label,
+.add-recipe input,
+.add-recipe textarea {
+  width: 100%;
+  max-width: 400px;
+}
+
+label,
+input,
+textarea {
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.recipe-actions button {
+  margin-left: 10px;
+  background-color: black;
+  color: lightyellow;
+  border: black solid 1px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.recipe-actions button:hover {
+  background-color: darkgray;
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#pagination button {
+  margin: 0 5px;
+  padding: 5px 10px;
+  background-color: black;
+  color: lightyellow;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#pagination button:hover {
+  background-color: darkgray;
+}
+
+#current-page {
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+li div {
+  display: flex;
+  flex-direction: column;
+}
+
+li div img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+#search-form {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+#search-input {
+  flex-grow: 1;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: lightyellow;
+  color: black;
+}
+
+#search-input:focus {
+  outline: none;
+  border-color: black;
+}
+
+#search-button {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: lightyellow;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0);
+}

@@ -1,0 +1,51 @@
+//Aroob Aziz | 297457
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aroob's Recipe Management System</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Recipe Management System</h1>
+      <div class="add-recipe">
+        <h2>Add Recipe</h2>
+        <form id="recipe-form">
+          <label for="title">Title:</label>
+          <input type="text" id="title" required />
+
+          <label for="ingredients">Ingredients:</label>
+          <textarea id="ingredients" required></textarea>
+
+          <label for="instructions">Instructions:</label>
+          <textarea id="instructions" required></textarea>
+
+          <label for="image">Image:</label>
+          <input type="file" id="image" />
+
+          <input type="submit" value="Add Recipe" />
+        </form>
+      </div>
+
+      <div class="recipe-list">
+        <div class="search">
+          <h2>Search Recipes</h2>
+          <form id="search-form">
+            <input
+              type="text"
+              id="search-input"
+              placeholder="Search by title or ingredients"
+            />
+            <button id="search-button">Search</button>
+          </form>
+        </div>
+        <h2>Recipe List</h2>
+        <ul id="recipes"></ul>
+      </div>
+      <div id="pagination"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
